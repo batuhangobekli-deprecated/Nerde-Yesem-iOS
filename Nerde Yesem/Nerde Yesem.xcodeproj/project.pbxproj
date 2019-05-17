@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CF8C3B7B05296E836275CC7 /* Pods_Nerde_Yesem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DA18611AAF409707E17770 /* Pods_Nerde_Yesem.framework */; };
 		DF0E9B37228F745800C0F356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0E9B36228F745800C0F356 /* AppDelegate.swift */; };
 		DF0E9B39228F745800C0F356 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0E9B38228F745800C0F356 /* ViewController.swift */; };
 		DF0E9B3C228F745800C0F356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0E9B3A228F745800C0F356 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01FE4ED932FCA801F59A712D /* Pods-Nerde Yesem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nerde Yesem.release.xcconfig"; path = "Target Support Files/Pods-Nerde Yesem/Pods-Nerde Yesem.release.xcconfig"; sourceTree = "<group>"; };
+		B7DA18611AAF409707E17770 /* Pods_Nerde_Yesem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nerde_Yesem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0E9B33228F745800C0F356 /* Nerde Yesem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nerde Yesem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0E9B36228F745800C0F356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF0E9B38228F745800C0F356 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		DF0E9B52228F745800C0F356 /* Nerde YesemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nerde YesemUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0E9B56228F745800C0F356 /* Nerde_YesemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nerde_YesemUITests.swift; sourceTree = "<group>"; };
 		DF0E9B58228F745800C0F356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8294869D7B9149EC821BFB6 /* Pods-Nerde Yesem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nerde Yesem.debug.xcconfig"; path = "Target Support Files/Pods-Nerde Yesem/Pods-Nerde Yesem.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF8C3B7B05296E836275CC7 /* Pods_Nerde_Yesem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1157D7BB55F7F6F63A5DCD30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7DA18611AAF409707E17770 /* Pods_Nerde_Yesem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59A3B328F331A6246CFEC683 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8294869D7B9149EC821BFB6 /* Pods-Nerde Yesem.debug.xcconfig */,
+				01FE4ED932FCA801F59A712D /* Pods-Nerde Yesem.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DF0E9B2A228F745800C0F356 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +104,8 @@
 				DF0E9B4A228F745800C0F356 /* Nerde YesemTests */,
 				DF0E9B55228F745800C0F356 /* Nerde YesemUITests */,
 				DF0E9B34228F745800C0F356 /* Products */,
+				59A3B328F331A6246CFEC683 /* Pods */,
+				1157D7BB55F7F6F63A5DCD30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF0E9B5B228F745800C0F356 /* Build configuration list for PBXNativeTarget "Nerde Yesem" */;
 			buildPhases = (
+				FEF84FBC0C570272F0C10304 /* [CP] Check Pods Manifest.lock */,
 				DF0E9B2F228F745800C0F356 /* Sources */,
 				DF0E9B30228F745800C0F356 /* Frameworks */,
 				DF0E9B31228F745800C0F356 /* Resources */,
+				72D8307D58E2245B27B4C55B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72D8307D58E2245B27B4C55B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nerde Yesem/Pods-Nerde Yesem-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nerde Yesem/Pods-Nerde Yesem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF84FBC0C570272F0C10304 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nerde Yesem-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DF0E9B2F228F745800C0F356 /* Sources */ = {
@@ -430,6 +506,7 @@
 		};
 		DF0E9B5C228F745800C0F356 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8294869D7B9149EC821BFB6 /* Pods-Nerde Yesem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +525,7 @@
 		};
 		DF0E9B5D228F745800C0F356 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01FE4ED932FCA801F59A712D /* Pods-Nerde Yesem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
