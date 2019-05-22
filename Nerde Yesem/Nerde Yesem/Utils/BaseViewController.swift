@@ -33,7 +33,7 @@ class BaseViewController: UIViewController{
         navigationBarAppearace.titleTextAttributes = textAttributes
     }
     func configureTitleView(){
-        let titleView = UIView(frame: CGRect(x: 0, y: 0, width: 150, height: 38))
+        let titleView = UIView(frame: CGRect(x: 0, y: 0, width: 150, height: 50))
         let titleImageView = UIImageView(image: UIImage(named: "logo"))
         titleImageView.contentMode = .scaleAspectFit
         titleImageView.frame = CGRect(x: 0, y: 0, width: titleView.frame.width, height: titleView.frame.height)

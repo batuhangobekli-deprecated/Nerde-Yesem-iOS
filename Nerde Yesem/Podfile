@@ -6,7 +6,7 @@ target 'Nerde Yesem' do
  
  pod 'Alamofire', '~> 5.0.0-beta.5'
  pod 'Kingfisher', '~> 4.0'
-
+ pod 'NVActivityIndicatorView'
 
 
 end

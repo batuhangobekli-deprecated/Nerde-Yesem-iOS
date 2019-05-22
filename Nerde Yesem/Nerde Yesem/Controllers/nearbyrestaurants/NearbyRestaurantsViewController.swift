@@ -11,8 +11,8 @@ import UIKit
 class NearbyRestaurantsViewController: BaseViewController {
 
     override func viewDidLoad() {
+        self.isLogoEnabled = true
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 

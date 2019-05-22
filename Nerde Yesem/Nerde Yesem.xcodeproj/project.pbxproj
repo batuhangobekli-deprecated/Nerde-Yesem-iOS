@@ -36,6 +36,7 @@
 		DF4DF66C2295AB26008B4BE2 /* NearbyRestaurants.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF4DF66B2295AB26008B4BE2 /* NearbyRestaurants.storyboard */; };
 		DF4DF66F2295AE83008B4BE2 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF66E2295AE83008B4BE2 /* CategoriesCell.swift */; };
 		DF4DF6712295AF6C008B4BE2 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF6702295AF6C008B4BE2 /* CategoriesViewModel.swift */; };
+		DF4DF6732295B7F4008B4BE2 /* CategoriesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF6722295B7F4008B4BE2 /* CategoriesDataSource.swift */; };
 		DF59CAAB22956C6B00018377 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59CAAA22956C6B00018377 /* Extensions.swift */; };
 		DF59CAAD22956C7E00018377 /* NerdeYesemUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59CAAC22956C7E00018377 /* NerdeYesemUtils.swift */; };
 		DF59CAAF22956CA500018377 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59CAAE22956CA500018377 /* BaseViewController.swift */; };
@@ -95,6 +96,7 @@
 		DF4DF66B2295AB26008B4BE2 /* NearbyRestaurants.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NearbyRestaurants.storyboard; sourceTree = "<group>"; };
 		DF4DF66E2295AE83008B4BE2 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
 		DF4DF6702295AF6C008B4BE2 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		DF4DF6722295B7F4008B4BE2 /* CategoriesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesDataSource.swift; sourceTree = "<group>"; };
 		DF59CAAA22956C6B00018377 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DF59CAAC22956C7E00018377 /* NerdeYesemUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NerdeYesemUtils.swift; sourceTree = "<group>"; };
 		DF59CAAE22956CA500018377 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -169,12 +171,13 @@
 		DF0E9B35228F745800C0F356 /* Nerde Yesem */ = {
 			isa = PBXGroup;
 			children = (
+				DF59CA892295695000018377 /* Models */,
+				DF59CA8C2295696400018377 /* ViewModels */,
 				DF4DF66D2295AE5D008B4BE2 /* View */,
+				DF59CA8A2295695500018377 /* Controllers */,
+				DF4DF6742295B8B0008B4BE2 /* Datasources */,
 				DF59CAA922956C1900018377 /* Utils */,
 				DF59CA8D2295698000018377 /* Storyboards */,
-				DF59CA8C2295696400018377 /* ViewModels */,
-				DF59CA8A2295695500018377 /* Controllers */,
-				DF59CA892295695000018377 /* Models */,
 				DF59CA88229568C900018377 /* Api */,
 				DF0E9B36228F745800C0F356 /* AppDelegate.swift */,
 				DF0E9B3D228F745800C0F356 /* Assets.xcassets */,
@@ -225,6 +228,14 @@
 				DF4DF66E2295AE83008B4BE2 /* CategoriesCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DF4DF6742295B8B0008B4BE2 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				DF4DF6722295B7F4008B4BE2 /* CategoriesDataSource.swift */,
+			);
+			path = Datasources;
 			sourceTree = "<group>";
 		};
 		DF59CA88229568C900018377 /* Api */ = {
@@ -451,6 +462,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Nerde Yesem/Pods-Nerde Yesem-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -458,6 +470,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -497,6 +510,7 @@
 				DF59CAAF22956CA500018377 /* BaseViewController.swift in Sources */,
 				DF4DF64422958A01008B4BE2 /* APIRouter.swift in Sources */,
 				DF59CAAB22956C6B00018377 /* Extensions.swift in Sources */,
+				DF4DF6732295B7F4008B4BE2 /* CategoriesDataSource.swift in Sources */,
 				DF0E9B39228F745800C0F356 /* NearbyRestaurantsViewController.swift in Sources */,
 				DF59CAAD22956C7E00018377 /* NerdeYesemUtils.swift in Sources */,
 				DF4DF64022958850008B4BE2 /* CategoriesPresenter.swift in Sources */,

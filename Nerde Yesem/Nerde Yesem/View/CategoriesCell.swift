@@ -9,7 +9,7 @@
 import UIKit
 
 class CategoriesCell: UITableViewCell {
-    static let reuseIdentifier = "eventMenuCell"
+    static let reuseIdentifier = "categoriesCell"
     @IBOutlet weak var categoryName: UILabel!
     @IBOutlet weak var categoryThumbail: UIImageView!
     
