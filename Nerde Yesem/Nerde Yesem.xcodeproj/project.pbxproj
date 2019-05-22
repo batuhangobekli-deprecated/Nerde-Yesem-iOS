@@ -15,6 +15,9 @@
 		DF0E9B41228F745800C0F356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0E9B3F228F745800C0F356 /* LaunchScreen.storyboard */; };
 		DF0E9B4C228F745800C0F356 /* Nerde_YesemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0E9B4B228F745800C0F356 /* Nerde_YesemTests.swift */; };
 		DF0E9B57228F745800C0F356 /* Nerde_YesemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0E9B56228F745800C0F356 /* Nerde_YesemUITests.swift */; };
+		DF59CAAB22956C6B00018377 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59CAAA22956C6B00018377 /* Extensions.swift */; };
+		DF59CAAD22956C7E00018377 /* NerdeYesemUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59CAAC22956C7E00018377 /* NerdeYesemUtils.swift */; };
+		DF59CAAF22956CA500018377 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59CAAE22956CA500018377 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,16 @@
 		DF0E9B52228F745800C0F356 /* Nerde YesemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nerde YesemUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0E9B56228F745800C0F356 /* Nerde_YesemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nerde_YesemUITests.swift; sourceTree = "<group>"; };
 		DF0E9B58228F745800C0F356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF59CA9D22956B2900018377 /* UserRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRating.swift; sourceTree = "<group>"; };
+		DF59CA9E22956B2900018377 /* NearbyRestaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRestaurants.swift; sourceTree = "<group>"; };
+		DF59CA9F22956B2900018377 /* NearbyRestaurantsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRestaurantsResponse.swift; sourceTree = "<group>"; };
+		DF59CAA022956B2900018377 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		DF59CAA122956B2900018377 /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
+		DF59CAA222956B2900018377 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		DF59CAA322956B2900018377 /* Popularity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popularity.swift; sourceTree = "<group>"; };
+		DF59CAAA22956C6B00018377 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DF59CAAC22956C7E00018377 /* NerdeYesemUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NerdeYesemUtils.swift; sourceTree = "<group>"; };
+		DF59CAAE22956CA500018377 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E8294869D7B9149EC821BFB6 /* Pods-Nerde Yesem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nerde Yesem.debug.xcconfig"; path = "Target Support Files/Pods-Nerde Yesem/Pods-Nerde Yesem.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,7 +106,6 @@
 				E8294869D7B9149EC821BFB6 /* Pods-Nerde Yesem.debug.xcconfig */,
 				01FE4ED932FCA801F59A712D /* Pods-Nerde Yesem.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -122,11 +134,14 @@
 		DF0E9B35228F745800C0F356 /* Nerde Yesem */ = {
 			isa = PBXGroup;
 			children = (
+				DF59CAA922956C1900018377 /* Utils */,
+				DF59CA8D2295698000018377 /* Storyboards */,
+				DF59CA8C2295696400018377 /* View Models */,
+				DF59CA8A2295695500018377 /* Controllers */,
+				DF59CA892295695000018377 /* Models */,
+				DF59CA88229568C900018377 /* Api */,
 				DF0E9B36228F745800C0F356 /* AppDelegate.swift */,
-				DF0E9B38228F745800C0F356 /* ViewController.swift */,
-				DF0E9B3A228F745800C0F356 /* Main.storyboard */,
 				DF0E9B3D228F745800C0F356 /* Assets.xcassets */,
-				DF0E9B3F228F745800C0F356 /* LaunchScreen.storyboard */,
 				DF0E9B42228F745800C0F356 /* Info.plist */,
 			);
 			path = "Nerde Yesem";
@@ -148,6 +163,77 @@
 				DF0E9B58228F745800C0F356 /* Info.plist */,
 			);
 			path = "Nerde YesemUITests";
+			sourceTree = "<group>";
+		};
+		DF59CA88229568C900018377 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		DF59CA892295695000018377 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF59CAA422956B5800018377 /* categories */,
+				DF59CA9C22956B2100018377 /* nearbyrestaurants */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF59CA8A2295695500018377 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF0E9B38228F745800C0F356 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DF59CA8C2295696400018377 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		DF59CA8D2295698000018377 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DF0E9B3F228F745800C0F356 /* LaunchScreen.storyboard */,
+				DF0E9B3A228F745800C0F356 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DF59CA9C22956B2100018377 /* nearbyrestaurants */ = {
+			isa = PBXGroup;
+			children = (
+				DF59CA9F22956B2900018377 /* NearbyRestaurantsResponse.swift */,
+				DF59CAA022956B2900018377 /* Location.swift */,
+				DF59CA9E22956B2900018377 /* NearbyRestaurants.swift */,
+				DF59CAA322956B2900018377 /* Popularity.swift */,
+				DF59CAA122956B2900018377 /* R.swift */,
+				DF59CAA222956B2900018377 /* Restaurant.swift */,
+				DF59CA9D22956B2900018377 /* UserRating.swift */,
+			);
+			path = nearbyrestaurants;
+			sourceTree = "<group>";
+		};
+		DF59CAA422956B5800018377 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = categories;
+			sourceTree = "<group>";
+		};
+		DF59CAA922956C1900018377 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DF59CAAA22956C6B00018377 /* Extensions.swift */,
+				DF59CAAC22956C7E00018377 /* NerdeYesemUtils.swift */,
+				DF59CAAE22956CA500018377 /* BaseViewController.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,7 +418,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF59CAAF22956CA500018377 /* BaseViewController.swift in Sources */,
+				DF59CAAB22956C6B00018377 /* Extensions.swift in Sources */,
 				DF0E9B39228F745800C0F356 /* ViewController.swift in Sources */,
+				DF59CAAD22956C7E00018377 /* NerdeYesemUtils.swift in Sources */,
 				DF0E9B37228F745800C0F356 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
