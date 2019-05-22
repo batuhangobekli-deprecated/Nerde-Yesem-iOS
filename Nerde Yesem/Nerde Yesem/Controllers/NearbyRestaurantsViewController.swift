@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NearbyRestaurantsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
