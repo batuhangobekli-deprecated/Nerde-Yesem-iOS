@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CategoriesViewController: BaseViewController,CategoriesView{
+class CategoriesViewController: BaseViewController{
     @IBOutlet weak var categoriesTableView: UITableView!
     var presenter:CategoriesPresenter!
     var dataSource = CategoriesDataSource(categories: [])
@@ -21,6 +21,9 @@ class CategoriesViewController: BaseViewController,CategoriesView{
         presenter = CategoriesPresenter(categoriesView: self)
         presenter.getCategories()
     }
+}
+
+extension CategoriesViewController:CategoriesView{
     func onGetCategories(categories: CategoriesResponse) {
         dataSource.update(with: categories.categories!)
         categoriesTableView.reloadData()

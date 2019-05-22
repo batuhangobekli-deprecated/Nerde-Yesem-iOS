@@ -37,6 +37,9 @@
 		DF4DF66F2295AE83008B4BE2 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF66E2295AE83008B4BE2 /* CategoriesCell.swift */; };
 		DF4DF6712295AF6C008B4BE2 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF6702295AF6C008B4BE2 /* CategoriesViewModel.swift */; };
 		DF4DF6732295B7F4008B4BE2 /* CategoriesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF6722295B7F4008B4BE2 /* CategoriesDataSource.swift */; };
+		DF4DF67A2295C250008B4BE2 /* NearbyRestaurantsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF6792295C250008B4BE2 /* NearbyRestaurantsPresenter.swift */; };
+		DF4DF67C2295C2B3008B4BE2 /* NearbyRestaurantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF67B2295C2B3008B4BE2 /* NearbyRestaurantsView.swift */; };
+		DF4DF67E2295C4DD008B4BE2 /* NearbyRestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF67D2295C4DD008B4BE2 /* NearbyRestaurantCell.swift */; };
 		DF59CAAB22956C6B00018377 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59CAAA22956C6B00018377 /* Extensions.swift */; };
 		DF59CAAD22956C7E00018377 /* NerdeYesemUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59CAAC22956C7E00018377 /* NerdeYesemUtils.swift */; };
 		DF59CAAF22956CA500018377 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59CAAE22956CA500018377 /* BaseViewController.swift */; };
@@ -97,6 +100,9 @@
 		DF4DF66E2295AE83008B4BE2 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
 		DF4DF6702295AF6C008B4BE2 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
 		DF4DF6722295B7F4008B4BE2 /* CategoriesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesDataSource.swift; sourceTree = "<group>"; };
+		DF4DF6792295C250008B4BE2 /* NearbyRestaurantsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRestaurantsPresenter.swift; sourceTree = "<group>"; };
+		DF4DF67B2295C2B3008B4BE2 /* NearbyRestaurantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRestaurantsView.swift; sourceTree = "<group>"; };
+		DF4DF67D2295C4DD008B4BE2 /* NearbyRestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRestaurantCell.swift; sourceTree = "<group>"; };
 		DF59CAAA22956C6B00018377 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DF59CAAC22956C7E00018377 /* NerdeYesemUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NerdeYesemUtils.swift; sourceTree = "<group>"; };
 		DF59CAAE22956CA500018377 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				DF0E9B38228F745800C0F356 /* NearbyRestaurantsViewController.swift */,
+				DF4DF6792295C250008B4BE2 /* NearbyRestaurantsPresenter.swift */,
+				DF4DF67B2295C2B3008B4BE2 /* NearbyRestaurantsView.swift */,
 			);
 			path = nearbyrestaurants;
 			sourceTree = "<group>";
@@ -226,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				DF4DF66E2295AE83008B4BE2 /* CategoriesCell.swift */,
+				DF4DF67D2295C4DD008B4BE2 /* NearbyRestaurantCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -514,6 +523,7 @@
 				DF0E9B39228F745800C0F356 /* NearbyRestaurantsViewController.swift in Sources */,
 				DF59CAAD22956C7E00018377 /* NerdeYesemUtils.swift in Sources */,
 				DF4DF64022958850008B4BE2 /* CategoriesPresenter.swift in Sources */,
+				DF4DF67A2295C250008B4BE2 /* NearbyRestaurantsPresenter.swift in Sources */,
 				DF4DF66222959D50008B4BE2 /* UserRating.swift in Sources */,
 				DF4DF65822959CC1008B4BE2 /* Location.swift in Sources */,
 				DF4DF63822958633008B4BE2 /* CategoriesViewController.swift in Sources */,
@@ -523,10 +533,12 @@
 				DF4DF66F2295AE83008B4BE2 /* CategoriesCell.swift in Sources */,
 				DF4DF65E22959D1C008B4BE2 /* R.swift in Sources */,
 				DF4DF65C22959D06008B4BE2 /* Popularity.swift in Sources */,
+				DF4DF67C2295C2B3008B4BE2 /* NearbyRestaurantsView.swift in Sources */,
 				DF4DF66022959D2C008B4BE2 /* Restaurant.swift in Sources */,
 				DF4DF6682295A08F008B4BE2 /* Categories.swift in Sources */,
 				DF4DF6422295885A008B4BE2 /* CategoriesView.swift in Sources */,
 				DF0E9B37228F745800C0F356 /* AppDelegate.swift in Sources */,
+				DF4DF67E2295C4DD008B4BE2 /* NearbyRestaurantCell.swift in Sources */,
 				DF4DF63C229587CA008B4BE2 /* Constants.swift in Sources */,
 				DF4DF65A22959CEC008B4BE2 /* NearbyRestaurants.swift in Sources */,
 				DF4DF6712295AF6C008B4BE2 /* CategoriesViewModel.swift in Sources */,
