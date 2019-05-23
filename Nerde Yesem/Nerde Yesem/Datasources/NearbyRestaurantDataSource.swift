@@ -9,9 +9,12 @@
 import Foundation
 import Foundation
 import UIKit
+import MapKit
+
 
 class NearbyRestaurantDataSource:NSObject,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     private var restaurants = [NearbyRestaurants]()
+    private var location:CLLocation!
     
     init(restaurants:[NearbyRestaurants]) {
         self.restaurants = restaurants
@@ -25,6 +28,7 @@ class NearbyRestaurantDataSource:NSObject,UICollectionViewDataSource,UICollectio
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NearbyRestaurantCell.reuseIdentifier, for: indexPath) as! NearbyRestaurantCell
         let restaurant = restaurants[indexPath.row]
         let viewModel = NearbyRestaurantViewModel(nearbyRestaurant: restaurant)
+        cell.distanceLabel.text = NerdeYesemUtils.calculateDistance(lat_r:restaurant.restaurant?.location?.latitude?.toDouble, long_r: restaurant.restaurant?.location?.longitude?.toDouble, lat_a: location.coordinate.latitude, long_a: location.coordinate.longitude)
         cell.configure(with: viewModel)
         return cell
     }
@@ -32,8 +36,9 @@ class NearbyRestaurantDataSource:NSObject,UICollectionViewDataSource,UICollectio
         return restaurants[indexPath.row]
     }
     
-    func update(with restaurants: [NearbyRestaurants]) {
+    func update(with restaurants: [NearbyRestaurants],location:CLLocation) {
         self.restaurants = restaurants
+        self.location = location
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width - 20, height: 200)

@@ -12,11 +12,15 @@ import MapKit
 class NearbyRestaurantsViewController: BaseViewController{
     var locationManager: CLLocationManager!
     var presenter:NearbyRestaurantsPresenter!
+    var location:CLLocation!
+    @IBOutlet weak var nearbyRestaurantCollectionView: UICollectionView!
+    var dataSource = NearbyRestaurantDataSource(restaurants: [])
     
     override func viewDidLoad() {
         self.isLogoEnabled = true
         super.viewDidLoad()
         presenter = NearbyRestaurantsPresenter(nearbyRestaurantView: self)
+        nearbyRestaurantCollectionView.dataSource = dataSource
         configureLocationManager()
     }
     func configureLocationManager(){
@@ -25,10 +29,16 @@ class NearbyRestaurantsViewController: BaseViewController{
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
+    
+    func getNearbyRestaurants(lat:Double,long:Double){
+        presenter.getNearbyRestaurants(lat: lat, long: long)
+    }
 }
 
 extension NearbyRestaurantsViewController:NearbyRestaurantsView{
     func onGetNearbyRestaurants(restaurants: NearbyRestaurantResponse) {
+        dataSource.update(with: restaurants.nearby_restaurants!, location: location)
+        nearbyRestaurantCollectionView.reloadData()
         
     }
 }
@@ -47,8 +57,8 @@ extension NearbyRestaurantsViewController:CLLocationManagerDelegate {
         guard let location = locations.first else {
             return
         }
-        print(location)
-        //dinnerListDataSource?.setLocation(locResult: location)
+        self.location = location
         locationManager.stopUpdatingLocation()
+        getNearbyRestaurants(lat: 38.437284264690746, long: 27.143635469058104)
     }
 }

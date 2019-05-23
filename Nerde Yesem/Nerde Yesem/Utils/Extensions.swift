@@ -81,4 +81,8 @@ public enum ImageAnimation {
         }
     }
 }
-
+extension String {
+    var toDouble: Double {
+        return Double(self) ?? 0.0
+    }
+}

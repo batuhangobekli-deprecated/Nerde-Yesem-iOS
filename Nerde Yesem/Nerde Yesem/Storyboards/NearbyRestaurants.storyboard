@@ -139,6 +139,9 @@
                         <viewLayoutGuide key="safeArea" id="hO2-NZ-5m3"/>
                     </view>
                     <navigationItem key="navigationItem" id="HTp-ux-LdE"/>
+                    <connections>
+                        <outlet property="nearbyRestaurantCollectionView" destination="Z9c-yJ-GP0" id="qNH-f9-G57"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQo-79-mMC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

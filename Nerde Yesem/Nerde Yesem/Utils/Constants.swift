@@ -7,15 +7,16 @@
 //
 
 import Foundation
+import Alamofire
 
 struct Constants {
     struct ProductionServer {
-        static let baseURL = "https://developers.zomato.com/api/v2.1/"
+        static let baseURL = "https://developers.zomato.com/api/v2.1"
     }
     
     struct APIParameterKey {
         static let lat = "lat"
-        static let long = "long"
+        static let long = "lon"
     }
 }
 
@@ -30,4 +31,7 @@ enum ContentType: String {
     case json = "application/json"
 }
 
-
+enum RequestParams {
+    case body(_:Parameters)
+    case url(_:Parameters)
+}

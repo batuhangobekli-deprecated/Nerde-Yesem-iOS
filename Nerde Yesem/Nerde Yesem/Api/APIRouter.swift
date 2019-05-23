@@ -23,6 +23,15 @@ enum APIRouter: APIConfiguration {
             return .get
         }
     }
+    // MARK: - Parameters
+     var parameters: RequestParams {
+        switch self {
+        case .nearbyRestaurants(let lat, let long):
+            return .url(["lat":lat,"lon":long])
+        case .categories:
+            return.body([:])
+        }
+    }
     
     // MARK: - Path
     var path: String {
@@ -31,16 +40,6 @@ enum APIRouter: APIConfiguration {
             return "/geocode"
         case .categories:
             return "/categories"
-        }
-    }
-    
-    // MARK: - Parameters
-    var parameters: Parameters? {
-        switch self {
-        case .nearbyRestaurants(let lat, let long):
-            return [Constants.APIParameterKey.lat: lat, Constants.APIParameterKey.long: long]
-        case .categories:
-            return nil
         }
     }
     
@@ -59,17 +58,19 @@ enum APIRouter: APIConfiguration {
         urlRequest.setValue("b32f1315bae0ada454480368f64206d6", forHTTPHeaderField: "user-key")
         
         // Parameters
-        if let parameters = parameters {
-            do {
-                urlRequest.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
-            } catch {
-                throw AFError.parameterEncodingFailed(reason: .jsonEncodingFailed(error: error))
-            }
+        switch parameters {
+            
+        case .body(let params):
+            urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
+            
+        case .url(let params):
+                let queryParams = params.map { pair  in
+                    return URLQueryItem(name: pair.key, value: "\(pair.value)")
+                }
+                var components = URLComponents(string:url.appendingPathComponent(path).absoluteString)
+                components?.queryItems = queryParams
+                urlRequest.url = components?.url
         }
-        
-        return urlRequest
+            return urlRequest
     }
 }
-
-
-
