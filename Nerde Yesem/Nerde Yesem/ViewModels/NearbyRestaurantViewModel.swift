@@ -17,10 +17,10 @@ struct NearbyRestaurantViewModel {
 }
 
 extension NearbyRestaurantViewModel {
-    init(nearbyRestaurant:Restaurant) {
-        restaurantName = nearbyRestaurant.name
+    init(nearbyRestaurant:NearbyRestaurants) {
+        restaurantName = nearbyRestaurant.restaurant?.name
         //restaurantDistance = "distance"
-        restaurantRating = nearbyRestaurant.user_rating?.aggregate_rating
-        restaurantThumbnail = nearbyRestaurant.thumb
+        restaurantRating = nearbyRestaurant.restaurant?.user_rating?.aggregate_rating
+        restaurantThumbnail = nearbyRestaurant.restaurant?.thumb
     }
 }

@@ -41,6 +41,7 @@
 		DF4DF67C2295C2B3008B4BE2 /* NearbyRestaurantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF67B2295C2B3008B4BE2 /* NearbyRestaurantsView.swift */; };
 		DF4DF67E2295C4DD008B4BE2 /* NearbyRestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF67D2295C4DD008B4BE2 /* NearbyRestaurantCell.swift */; };
 		DF4DF6802295CB2D008B4BE2 /* NearbyRestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF67F2295CB2D008B4BE2 /* NearbyRestaurantViewModel.swift */; };
+		DF4DF6822296966A008B4BE2 /* NearbyRestaurantDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DF6812296966A008B4BE2 /* NearbyRestaurantDataSource.swift */; };
 		DF59CAAB22956C6B00018377 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59CAAA22956C6B00018377 /* Extensions.swift */; };
 		DF59CAAD22956C7E00018377 /* NerdeYesemUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59CAAC22956C7E00018377 /* NerdeYesemUtils.swift */; };
 		DF59CAAF22956CA500018377 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59CAAE22956CA500018377 /* BaseViewController.swift */; };
@@ -105,6 +106,7 @@
 		DF4DF67B2295C2B3008B4BE2 /* NearbyRestaurantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRestaurantsView.swift; sourceTree = "<group>"; };
 		DF4DF67D2295C4DD008B4BE2 /* NearbyRestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRestaurantCell.swift; sourceTree = "<group>"; };
 		DF4DF67F2295CB2D008B4BE2 /* NearbyRestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRestaurantViewModel.swift; sourceTree = "<group>"; };
+		DF4DF6812296966A008B4BE2 /* NearbyRestaurantDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRestaurantDataSource.swift; sourceTree = "<group>"; };
 		DF59CAAA22956C6B00018377 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DF59CAAC22956C7E00018377 /* NerdeYesemUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NerdeYesemUtils.swift; sourceTree = "<group>"; };
 		DF59CAAE22956CA500018377 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				DF4DF6722295B7F4008B4BE2 /* CategoriesDataSource.swift */,
+				DF4DF6812296966A008B4BE2 /* NearbyRestaurantDataSource.swift */,
 			);
 			path = Datasources;
 			sourceTree = "<group>";
@@ -546,6 +549,7 @@
 				DF4DF63C229587CA008B4BE2 /* Constants.swift in Sources */,
 				DF4DF65A22959CEC008B4BE2 /* NearbyRestaurants.swift in Sources */,
 				DF4DF6712295AF6C008B4BE2 /* CategoriesViewModel.swift in Sources */,
+				DF4DF6822296966A008B4BE2 /* NearbyRestaurantDataSource.swift in Sources */,
 				DF4DF6662295A058008B4BE2 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
