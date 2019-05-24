@@ -37,7 +37,7 @@ class NearbyRestaurantsViewController: BaseViewController{
 
 extension NearbyRestaurantsViewController:NearbyRestaurantsView{
     func onGetNearbyRestaurants(restaurants: NearbyRestaurantResponse) {
-        dataSource.update(with: restaurants.nearby_restaurants!, location: location)
+        dataSource.update(with: restaurants.nearby_restaurants, location: location)
         nearbyRestaurantCollectionView.reloadData()
         
     }
@@ -59,6 +59,6 @@ extension NearbyRestaurantsViewController:CLLocationManagerDelegate {
         }
         self.location = location
         locationManager.stopUpdatingLocation()
-        getNearbyRestaurants(lat: 38.437284264690746, long: 27.143635469058104)
+        getNearbyRestaurants(lat: location.coordinate.latitude, long: location.coordinate.longitude)
     }
 }

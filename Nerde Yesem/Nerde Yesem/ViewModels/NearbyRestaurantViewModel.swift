@@ -8,10 +8,11 @@
 
 import Foundation
 import UIKit
+import MapKit
 
 struct NearbyRestaurantViewModel {
     let restaurantName: String?
-    //let restaurantDistance:String?
+  //  let restaurantDistance:CLLocation?
     let restaurantRating:String?
     let restaurantThumbnail:String?
 }
@@ -19,7 +20,7 @@ struct NearbyRestaurantViewModel {
 extension NearbyRestaurantViewModel {
     init(nearbyRestaurant:NearbyRestaurants) {
         restaurantName = nearbyRestaurant.restaurant?.name
-        //restaurantDistance = "distance"
+       // restaurantDistance = CLLocation(latitude: (nearbyRestaurant.restaurant?.location?.latitude)!, longitude: (nearbyRestaurant.restaurant?.location?.longitude)!)
         restaurantRating = nearbyRestaurant.restaurant?.user_rating?.aggregate_rating
         restaurantThumbnail = nearbyRestaurant.restaurant?.thumb
     }

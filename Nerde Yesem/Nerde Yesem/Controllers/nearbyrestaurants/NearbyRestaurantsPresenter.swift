@@ -17,13 +17,15 @@ class NearbyRestaurantsPresenter {
     }
     func getNearbyRestaurants(lat:Double,long:Double) {
         AF.request(APIRouter.nearbyRestaurants(lat: lat, long: long))
+            .validate(statusCode: 200..<300)
             .responseDecodable { (response: DataResponse<NearbyRestaurantResponse>) in
                 debugPrint(response)
                 switch response.result {
                 case .success(let nearbyRestaurants):
                     self.nearbyRestaurantView.onGetNearbyRestaurants(restaurants: nearbyRestaurants)
-                    break
+                    print("success")
                 case .failure(let error):
+                     print("fail")
                     break
                 }
         }
