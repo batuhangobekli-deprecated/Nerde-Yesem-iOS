@@ -32,10 +32,6 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l8u-h0-qgf">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="109.5"/>
                                                 </imageView>
-                                                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mcv-JG-bKn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="109.5"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TI4-H6-7RB">
                                                     <rect key="frame" x="181" y="43" width="52" height="24"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -46,14 +42,10 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="l8u-h0-qgf" secondAttribute="trailing" id="7sZ-0R-knP"/>
                                                 <constraint firstItem="l8u-h0-qgf" firstAttribute="leading" secondItem="BPN-cb-36A" secondAttribute="leading" id="OL8-Dp-fja"/>
-                                                <constraint firstItem="Mcv-JG-bKn" firstAttribute="leading" secondItem="BPN-cb-36A" secondAttribute="leading" id="VHN-8d-70W"/>
                                                 <constraint firstItem="TI4-H6-7RB" firstAttribute="centerX" secondItem="BPN-cb-36A" secondAttribute="centerX" id="Z7r-aC-2CE"/>
                                                 <constraint firstItem="TI4-H6-7RB" firstAttribute="centerY" secondItem="BPN-cb-36A" secondAttribute="centerY" id="duo-Hu-nhv"/>
-                                                <constraint firstAttribute="bottom" secondItem="Mcv-JG-bKn" secondAttribute="bottom" id="fyu-Yg-xm7"/>
-                                                <constraint firstItem="Mcv-JG-bKn" firstAttribute="top" secondItem="BPN-cb-36A" secondAttribute="top" id="jFu-Cx-obI"/>
                                                 <constraint firstItem="l8u-h0-qgf" firstAttribute="top" secondItem="BPN-cb-36A" secondAttribute="top" id="ltI-nj-OOs"/>
                                                 <constraint firstAttribute="bottom" secondItem="l8u-h0-qgf" secondAttribute="bottom" id="p0f-3S-V4Y"/>
-                                                <constraint firstAttribute="trailing" secondItem="Mcv-JG-bKn" secondAttribute="trailing" id="xKf-Ot-FHY"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -82,11 +74,11 @@
             </objects>
             <point key="canvasLocation" x="1014.4927536231885" y="-267.1875"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Kategoriler-->
         <scene sceneID="9ov-PV-TGV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1xI-nH-QrU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="dEV-v1-IeL">
+                    <tabBarItem key="tabBarItem" title="Kategoriler" image="categories_tabbar" id="dEV-v1-IeL">
                         <color key="badgeColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -105,4 +97,7 @@
             <point key="canvasLocation" x="104.34782608695653" y="-267.1875"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="categories_tabbar" width="30" height="30"/>
+    </resources>
 </document>

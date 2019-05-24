@@ -16,11 +16,24 @@ class NearbyRestaurantsViewController: BaseViewController{
     @IBOutlet weak var nearbyRestaurantCollectionView: UICollectionView!
     var dataSource = NearbyRestaurantDataSource(restaurants: [])
     
+    //MARK:SEGUES
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         if  segue.identifier == "showRestaurantDetail" {
+            let cell = sender as! NearbyRestaurantCell
+            if let indexPath = nearbyRestaurantCollectionView.indexPath(for: cell){
+                let restaurant = dataSource.restaurant(at: indexPath)
+                let receiverVC = segue.destination as! RestaurantDetailViewController
+                receiverVC.restaurantID = restaurant.restaurant?.r?.res_id
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         self.isLogoEnabled = true
         super.viewDidLoad()
         presenter = NearbyRestaurantsPresenter(nearbyRestaurantView: self)
         nearbyRestaurantCollectionView.dataSource = dataSource
+        nearbyRestaurantCollectionView.delegate = dataSource
         configureLocationManager()
     }
     func configureLocationManager(){

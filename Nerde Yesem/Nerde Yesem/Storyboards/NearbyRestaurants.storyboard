@@ -101,6 +101,7 @@
                                             <outlet property="distanceLabel" destination="d5y-LM-j5W" id="9jb-Yo-adY"/>
                                             <outlet property="restaurantNameLabel" destination="ppb-Ex-fMo" id="qyL-ZN-9At"/>
                                             <outlet property="restaurantThumbnail" destination="niM-cy-7nj" id="FP7-N3-sE2"/>
+                                            <segue destination="GyQ-XL-OWR" kind="show" identifier="showRestaurantDetail" id="hJW-ec-jwX"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -124,11 +125,19 @@
             </objects>
             <point key="canvasLocation" x="1102.8985507246377" y="46.875"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--RestaurantDetail-->
+        <scene sceneID="iyQ-zr-ejt">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RestaurantDetailViewController" storyboardName="RestaurantDetail" id="GyQ-XL-OWR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sNe-ha-sCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837" y="-126"/>
+        </scene>
+        <!--Yakınımdakiler-->
         <scene sceneID="Rpd-da-IjM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9us-zi-toP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="FXn-Hg-Cny"/>
+                    <tabBarItem key="tabBarItem" title="Yakınımdakiler" image="nearby_tabbar" id="FXn-Hg-Cny"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FZO-T5-gEC">
@@ -145,4 +154,7 @@
             <point key="canvasLocation" x="192.75362318840581" y="46.875"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nearby_tabbar" width="30" height="30"/>
+    </resources>
 </document>
