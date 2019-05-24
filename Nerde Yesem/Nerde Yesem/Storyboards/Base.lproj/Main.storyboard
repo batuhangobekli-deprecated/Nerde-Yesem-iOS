@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gqm-hQ-jna">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ebf-iW-sCX">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,6 +30,73 @@
             </objects>
             <point key="canvasLocation" x="-1107" y="272"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="x3N-Er-dab">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ebf-iW-sCX" customClass="LoginViewController" customModule="Nerde_Yesem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Kc-dJ-4Jx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8BY-b2-pVx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="MjH-M1-1sV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face" translatesAutoresizingMaskIntoConstraints="NO" id="PYL-qT-txr">
+                                <rect key="frame" x="236" y="408" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="GX2-FD-AoQ"/>
+                                    <constraint firstAttribute="width" constant="80" id="GZx-Gn-Ggm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTK-3D-Oxx">
+                                <rect key="frame" x="198" y="413.5" width="18" height="69.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="58"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fingerprint" translatesAutoresizingMaskIntoConstraints="NO" id="j5P-15-6IH">
+                                <rect key="frame" x="98" y="408" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="M2j-2l-dap"/>
+                                    <constraint firstAttribute="height" constant="80" id="SFv-60-xBD"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGL-e6-THt">
+                                <rect key="frame" x="12" y="526" width="390" height="30"/>
+                                <state key="normal" title="FaceID veya Parmak İzi Kullan"/>
+                                <connections>
+                                    <action selector="onRetryAuthButtonTap:" destination="Ebf-iW-sCX" eventType="touchUpInside" id="w7k-Cl-EBX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FBr-0r-2e4" firstAttribute="trailing" secondItem="8BY-b2-pVx" secondAttribute="trailing" id="9BU-wa-DYo"/>
+                            <constraint firstItem="pTK-3D-Oxx" firstAttribute="centerX" secondItem="6Kc-dJ-4Jx" secondAttribute="centerX" id="Jjj-d5-xpf"/>
+                            <constraint firstItem="pTK-3D-Oxx" firstAttribute="centerY" secondItem="6Kc-dJ-4Jx" secondAttribute="centerY" id="Jlp-yJ-8if"/>
+                            <constraint firstItem="FBr-0r-2e4" firstAttribute="trailing" secondItem="EGL-e6-THt" secondAttribute="trailing" constant="12" id="Q9I-37-U6r"/>
+                            <constraint firstItem="pTK-3D-Oxx" firstAttribute="leading" secondItem="j5P-15-6IH" secondAttribute="trailing" constant="20" id="Rmi-l1-jgf"/>
+                            <constraint firstItem="j5P-15-6IH" firstAttribute="centerY" secondItem="pTK-3D-Oxx" secondAttribute="centerY" id="TX0-gA-Ut5"/>
+                            <constraint firstItem="PYL-qT-txr" firstAttribute="centerY" secondItem="pTK-3D-Oxx" secondAttribute="centerY" id="Xgx-Xu-KPb"/>
+                            <constraint firstItem="EGL-e6-THt" firstAttribute="top" secondItem="pTK-3D-Oxx" secondAttribute="bottom" constant="43" id="in5-WR-Lja"/>
+                            <constraint firstItem="PYL-qT-txr" firstAttribute="leading" secondItem="pTK-3D-Oxx" secondAttribute="trailing" constant="20" id="lfc-Vz-540"/>
+                            <constraint firstItem="EGL-e6-THt" firstAttribute="leading" secondItem="FBr-0r-2e4" secondAttribute="leading" constant="12" id="lt5-KK-lWu"/>
+                            <constraint firstItem="8BY-b2-pVx" firstAttribute="top" secondItem="FBr-0r-2e4" secondAttribute="top" id="vMW-DF-3HL"/>
+                            <constraint firstItem="8BY-b2-pVx" firstAttribute="leading" secondItem="FBr-0r-2e4" secondAttribute="leading" id="xDV-7o-U64"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FBr-0r-2e4"/>
+                    </view>
+                    <connections>
+                        <segue destination="gqm-hQ-jna" kind="show" identifier="showMainController" id="ckC-4j-S0d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ye3-Ho-94R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2362.3188405797105" y="-136.60714285714286"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="QqN-vP-lsV">
             <objects>
@@ -48,4 +116,9 @@
             <point key="canvasLocation" x="-1475" y="-156"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="face" width="512" height="512"/>
+        <image name="fingerprint" width="512" height="512"/>
+        <image name="logo" width="200" height="200"/>
+    </resources>
 </document>

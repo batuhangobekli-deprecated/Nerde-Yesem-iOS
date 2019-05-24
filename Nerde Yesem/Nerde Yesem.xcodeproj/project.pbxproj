@@ -14,6 +14,9 @@
 		DF03E9CE2297F6DD00B1F904 /* RestaurantDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF03E9CD2297F6DD00B1F904 /* RestaurantDetailPresenter.swift */; };
 		DF03E9D02297F6EC00B1F904 /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF03E9CF2297F6EC00B1F904 /* RestaurantView.swift */; };
 		DF03E9D32297F91A00B1F904 /* RestaurantDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF03E9D22297F91A00B1F904 /* RestaurantDetailResponse.swift */; };
+		DF03E9D6229810A900B1F904 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF03E9D5229810A900B1F904 /* LoginViewController.swift */; };
+		DF03E9D82298145B00B1F904 /* BiometricAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF03E9D72298145B00B1F904 /* BiometricAuthenticator.swift */; };
+		DF03E9DA2298147900B1F904 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF03E9D92298147900B1F904 /* AuthenticationError.swift */; };
 		DF0E9B37228F745800C0F356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0E9B36228F745800C0F356 /* AppDelegate.swift */; };
 		DF0E9B39228F745800C0F356 /* NearbyRestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0E9B38228F745800C0F356 /* NearbyRestaurantsViewController.swift */; };
 		DF0E9B3C228F745800C0F356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0E9B3A228F745800C0F356 /* Main.storyboard */; };
@@ -79,6 +82,9 @@
 		DF03E9CD2297F6DD00B1F904 /* RestaurantDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailPresenter.swift; sourceTree = "<group>"; };
 		DF03E9CF2297F6EC00B1F904 /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
 		DF03E9D22297F91A00B1F904 /* RestaurantDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailResponse.swift; sourceTree = "<group>"; };
+		DF03E9D5229810A900B1F904 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DF03E9D72298145B00B1F904 /* BiometricAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticator.swift; sourceTree = "<group>"; };
+		DF03E9D92298147900B1F904 /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
 		DF0E9B33228F745800C0F356 /* Nerde Yesem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nerde Yesem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0E9B36228F745800C0F356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF0E9B38228F745800C0F356 /* NearbyRestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRestaurantsViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +190,14 @@
 				DF03E9D22297F91A00B1F904 /* RestaurantDetailResponse.swift */,
 			);
 			path = restaurantDetail;
+			sourceTree = "<group>";
+		};
+		DF03E9D42298108A00B1F904 /* start */ = {
+			isa = PBXGroup;
+			children = (
+				DF03E9D5229810A900B1F904 /* LoginViewController.swift */,
+			);
+			path = start;
 			sourceTree = "<group>";
 		};
 		DF0E9B2A228F745800C0F356 = {
@@ -304,6 +318,7 @@
 		DF59CA8A2295695500018377 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DF03E9D42298108A00B1F904 /* start */,
 				DF03E9CA2297ED7B00B1F904 /* restaurantdetail */,
 				DF4DF63E22958832008B4BE2 /* categories */,
 				DF4DF63D22958828008B4BE2 /* nearbyrestaurants */,
@@ -365,6 +380,8 @@
 				DF4DF63922958692008B4BE2 /* Reachability.swift */,
 				DF4DF63B229587CA008B4BE2 /* Constants.swift */,
 				DF03E9C82297EA7900B1F904 /* IBDesignableExtensions.swift */,
+				DF03E9D72298145B00B1F904 /* BiometricAuthenticator.swift */,
+				DF03E9D92298147900B1F904 /* AuthenticationError.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -581,6 +598,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF03E9D6229810A900B1F904 /* LoginViewController.swift in Sources */,
 				DF4DF65622959C56008B4BE2 /* NearbyRestaurantResponse.swift in Sources */,
 				DF59CAAF22956CA500018377 /* BaseViewController.swift in Sources */,
 				DF4DF64422958A01008B4BE2 /* APIRouter.swift in Sources */,
@@ -592,6 +610,7 @@
 				DF0E9B39228F745800C0F356 /* NearbyRestaurantsViewController.swift in Sources */,
 				DF59CAAD22956C7E00018377 /* NerdeYesemUtils.swift in Sources */,
 				DF4DF64022958850008B4BE2 /* CategoriesPresenter.swift in Sources */,
+				DF03E9DA2298147900B1F904 /* AuthenticationError.swift in Sources */,
 				DF4DF67A2295C250008B4BE2 /* NearbyRestaurantsPresenter.swift in Sources */,
 				DF03E9D32297F91A00B1F904 /* RestaurantDetailResponse.swift in Sources */,
 				DF4DF66222959D50008B4BE2 /* UserRating.swift in Sources */,
@@ -601,6 +620,7 @@
 				DF4DF6642295A017008B4BE2 /* CategoriesResponse.swift in Sources */,
 				DF4DF64622958F5F008B4BE2 /* APIConfiguration.swift in Sources */,
 				DF4DF66F2295AE83008B4BE2 /* CategoriesCell.swift in Sources */,
+				DF03E9D82298145B00B1F904 /* BiometricAuthenticator.swift in Sources */,
 				DF4DF6802295CB2D008B4BE2 /* NearbyRestaurantViewModel.swift in Sources */,
 				DF4DF65E22959D1C008B4BE2 /* R.swift in Sources */,
 				DF4DF65C22959D06008B4BE2 /* Popularity.swift in Sources */,
