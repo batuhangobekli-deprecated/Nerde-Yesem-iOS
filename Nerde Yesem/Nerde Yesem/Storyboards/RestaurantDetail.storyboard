@@ -161,7 +161,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TlZ-n6-SqN">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TlZ-n6-SqN" customClass="GMSMapView" customModule="Nerde_Yesem" customModuleProvider="target">
                                                         <rect key="frame" x="8" y="51" width="374" height="191"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
@@ -238,6 +238,7 @@
                     <navigationItem key="navigationItem" id="nHx-It-GLt"/>
                     <connections>
                         <outlet property="cuisineLabel" destination="jnY-yY-s0r" id="soq-Y0-FEy"/>
+                        <outlet property="locationMap" destination="TlZ-n6-SqN" id="jsS-Pc-ufR"/>
                         <outlet property="phoneNumberLabel" destination="V7V-Yj-ahV" id="FhN-6Q-axp"/>
                         <outlet property="priceLabel" destination="3bI-rt-g7e" id="NTA-nY-mrm"/>
                         <outlet property="ratingsLabel" destination="Lya-0z-vuy" id="OXs-8u-qYf"/>
@@ -246,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XXa-oq-pJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1063.768115942029" y="79.6875"/>
+            <point key="canvasLocation" x="868" y="80"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nsI-cT-4kA">

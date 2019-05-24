@@ -11,6 +11,8 @@
 		DF03E9C72297E46B00B1F904 /* RestaurantDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF03E9C62297E46B00B1F904 /* RestaurantDetail.storyboard */; };
 		DF03E9C92297EA7900B1F904 /* IBDesignableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF03E9C82297EA7900B1F904 /* IBDesignableExtensions.swift */; };
 		DF03E9CC2297ED9A00B1F904 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF03E9CB2297ED9A00B1F904 /* RestaurantDetailViewController.swift */; };
+		DF03E9CE2297F6DD00B1F904 /* RestaurantDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF03E9CD2297F6DD00B1F904 /* RestaurantDetailPresenter.swift */; };
+		DF03E9D02297F6EC00B1F904 /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF03E9CF2297F6EC00B1F904 /* RestaurantView.swift */; };
 		DF0E9B37228F745800C0F356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0E9B36228F745800C0F356 /* AppDelegate.swift */; };
 		DF0E9B39228F745800C0F356 /* NearbyRestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0E9B38228F745800C0F356 /* NearbyRestaurantsViewController.swift */; };
 		DF0E9B3C228F745800C0F356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0E9B3A228F745800C0F356 /* Main.storyboard */; };
@@ -73,6 +75,8 @@
 		DF03E9C62297E46B00B1F904 /* RestaurantDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestaurantDetail.storyboard; sourceTree = "<group>"; };
 		DF03E9C82297EA7900B1F904 /* IBDesignableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableExtensions.swift; sourceTree = "<group>"; };
 		DF03E9CB2297ED9A00B1F904 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
+		DF03E9CD2297F6DD00B1F904 /* RestaurantDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailPresenter.swift; sourceTree = "<group>"; };
+		DF03E9CF2297F6EC00B1F904 /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
 		DF0E9B33228F745800C0F356 /* Nerde Yesem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nerde Yesem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0E9B36228F745800C0F356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF0E9B38228F745800C0F356 /* NearbyRestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRestaurantsViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				DF03E9CB2297ED9A00B1F904 /* RestaurantDetailViewController.swift */,
+				DF03E9CD2297F6DD00B1F904 /* RestaurantDetailPresenter.swift */,
+				DF03E9CF2297F6EC00B1F904 /* RestaurantView.swift */,
 			);
 			path = restaurantdetail;
 			sourceTree = "<group>";
@@ -569,7 +575,9 @@
 				DF4DF64422958A01008B4BE2 /* APIRouter.swift in Sources */,
 				DF03E9C92297EA7900B1F904 /* IBDesignableExtensions.swift in Sources */,
 				DF59CAAB22956C6B00018377 /* Extensions.swift in Sources */,
+				DF03E9D02297F6EC00B1F904 /* RestaurantView.swift in Sources */,
 				DF4DF6732295B7F4008B4BE2 /* CategoriesDataSource.swift in Sources */,
+				DF03E9CE2297F6DD00B1F904 /* RestaurantDetailPresenter.swift in Sources */,
 				DF0E9B39228F745800C0F356 /* NearbyRestaurantsViewController.swift in Sources */,
 				DF59CAAD22956C7E00018377 /* NerdeYesemUtils.swift in Sources */,
 				DF4DF64022958850008B4BE2 /* CategoriesPresenter.swift in Sources */,

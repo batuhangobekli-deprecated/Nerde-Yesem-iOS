@@ -13,6 +13,7 @@ enum APIRouter: APIConfiguration {
     
     case nearbyRestaurants(lat:Double, long:Double)
     case categories
+    case restaurant(resId:Int)
     
     // MARK: - HTTPMethod
     var method: HTTPMethod {
@@ -20,6 +21,8 @@ enum APIRouter: APIConfiguration {
         case .nearbyRestaurants:
             return .get
         case .categories:
+            return .get
+        case .restaurant:
             return .get
         }
     }
@@ -30,6 +33,8 @@ enum APIRouter: APIConfiguration {
             return .url(["lat":lat,"lon":long])
         case .categories:
             return.body([:])
+        case .restaurant(let resId):
+            return .url(["res_id":resId])
         }
     }
     
@@ -40,6 +45,8 @@ enum APIRouter: APIConfiguration {
             return "/geocode"
         case .categories:
             return "/categories"
+        case .restaurant:
+            return "/restaurant"
         }
     }
     
